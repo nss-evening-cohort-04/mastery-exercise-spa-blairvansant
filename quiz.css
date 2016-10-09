@@ -1,0 +1,21 @@
+#background {
+	background: linen;
+}
+
+#userInput {
+	width: 850px;
+}
+
+#navbar {
+	background-color: lightblue;
+}
+
+#brand {
+	font-family: "Contrail One";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 1000;
+	line-height: 26.4px;
+	color: dimgrey;
+}

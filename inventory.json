@@ -1,0 +1,26 @@
+{
+  "cars": [
+
+    {
+      "make": "Buick",
+      "model": "Wildcat",
+      "year": "1967",
+      "price": "8999",
+      "description": "This is an immaculate 1967 Buick Wildcat with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Buick",
+      "model": "Skylark",
+      "year": "1972",
+      "price": "9999",
+      "description": "This is an immaculate 1972 Buick Skylark with only 15000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Buick",
+      "model": "Electra",
+      "year": "1969",
+      "price": "10999",
+      "description": "This is an immaculate 1969 Buick Electra with only 10000 miles on it. Leather seats, power everything."
+    }
+  ]
+}
