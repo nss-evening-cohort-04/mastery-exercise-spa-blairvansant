@@ -1,36 +1,21 @@
 var CarLot = (function () {
   var inventory = [];
-
+  
   return {
-      loadInventory: function (callback) {
+      loadInventory: function () {
       var carInventory = ["inventory.json"];	
-      var inventoryLoader = new XMLHttpRequest();
+      var inventoryLoader = new XMLHttpRequest(); 
 
       inventoryLoader.addEventListener("load", function () {
       var inventory = JSON.parse(this.responseText);
 
       fillPage(inventory);
       });
-      inventoryLoad.open("GET", "inventory.json");
-      inventoryLoad.send();
+      inventoryLoader.open("GET", "inventory.json");
+      inventoryLoader.send();
     }
   };
 
 })();
 
 
-//BOILERPLATE//
-// var CarLot = (function () {
-//   var inventory = [];
-
-//   return {
-//     loadInventory: function (callback) {
-//       var inventoryLoader = new XMLHttpRequest();
-
-//       inventoryLoader.addEventListener("load", function () {
-
-//       });
-//     }
-//   };
-
-// })(); 

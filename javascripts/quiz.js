@@ -1,65 +1,25 @@
-function populatePage (inventory) {
+function populateDom (inventory) {
   // Loop over the inventory and populate the page
   var container = document.getElementById("container");
   var counter = 0;
   var carOutput = "";
+  var currentCar = "";
 
   	for (var i = 0; i < inventory.cars.length; i++) {
-  	var carOutput = inventory.cars[i];
+  	var car = inventory.cars[i];
+
   		carOutput += "<div id='container'>";
-  		carOutput += "<div class='col-md-4'>";
-  		carOutput += "<div class='row'>";
-  		carOutput += "<div>" + car.year + " " + car.make + " " + car.model + "</div>";
-  		carOutput += "<div>" + car.description + "</div>";
-  		carOutput += "<div>" + car.price + "</div>";
+        carOutput += "<div class='col-md-4 car_card border'>";
+        carOutput += "<div>" + car.year + " " + car.make + " " + car.modal + "</div>";
+        carOutput += "<div id='description' class='description'>" + car.description + "</div>";
+        carOutput += "<div>" + car.price + "</div>";
+        carOutput += "</div>";
+        carOutput += "</div>";
   	}
-  		container.innerHTML = carOutput;
-  // Now that the DOM is loaded, establish all the event listeners needed
- //   CarLot.activateEvents();
- //   	var CarLot = (function () {
- //   	var inventory = [];
-
- //  };
-
- //  return 
-
-	// })(CarLot || {});
-}
-
-// for (; counter < 5 ; counter++) {
-// 		var peopleObjects = `<header>${people[counter].name}:`;
-// 			peopleObjects += `${people[counter].title}</header>`;
-// 			peopleObjects += `<img src="${people[counter].image}">`;
-// 			peopleObjects += `<footer>lifespan: ${people[counter].lifespan.birth} to `;
-// 			peopleObjects += `${people[counter].lifespan.death}</footer>`;
-// 			peopleObjects += `<section>${people[counter].bio}</section>`;
-//   			outputEl.innerHTML += `<div class="people__container" id="people--${counter}">${peopleObjects}</div>`;
-// 	};
-
-// 	var bioSection;
-// 	for (var i = 0; i < peopleContainer.length; i++) {
-// 	    peopleContainer[i].addEventListener("click", function (event) {
-// 	    bioSection = this.childNodes[3];
-// 	    bioSection.parentElement.classList.toggle("border");
-    
-// 	    userInput.style.background = "lightgreen";
-//         if(userInput.value === "Add to selected bio"){
-//           userInput.value = "";
-//        	} else if (userInput.value === ""){
-//        		userInput.style.background = "white";
-//        		userInput.value = "Add to selected bio";
-//        	};
-
-//        	userInput.focus();
-//        	userInput.addEventListener("keyup", function (event){
-//        		event.preventDefault();
-//        		bioSection.innerHTML = userInput.value;
-//        	});
-//       }); 
-// 	} 
-
-
-
+  		
+      container.innerHTML = carOutput;
+      CarLot.activateEvents();
+};
 
 
 

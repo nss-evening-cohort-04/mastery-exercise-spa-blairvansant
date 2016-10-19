@@ -1,8 +1,5 @@
-#background {
-	background: linen;
-}
 
-#userInput {
+#enterText {
 	width: 850px;
 }
 
@@ -20,3 +17,53 @@
 	color: dimgrey;
 }
 
+.border {
+	border: solid 2px;
+	margin: 10px 0;
+	padding: 5px;
+	height: 150px;
+	max-height: 225px;
+}
+
+.on-click {
+	border: double 12px;
+	padding: 5px;
+  margin: 10px 0;
+	height: 150px;
+	max-height: 200px;
+	background-color: yellow;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+  background-color: lightgrey;
+}
+
+.border {
+    border: solid 2px;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    height: 150px;
+    max-height: 225px;
+}
+
+.on-click {
+  border: dotted 10px;
+  margin: 10px 0px 10px 0px;
+  padding: 5px;
+  height: 150px;
+  max-height: 225px;
+  background-color: lightblue;
+  word-wrap: break-word;*/
