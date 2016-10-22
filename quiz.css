@@ -14,11 +14,11 @@
 	font-variant: normal;
 	font-weight: 1000;
 	line-height: 26.4px;
-	color: dimgrey;
+	color: lightyellow;
 }
 
 .border {
-	border: solid 2px;
+	border: solid 4px;
 	margin: 10px 0;
 	padding: 5px;
 	height: 150px;
@@ -34,36 +34,21 @@
 	background-color: yellow;	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*body {
-  background-color: lightgrey;
+/*.container {
+	max-width: 300px
 }
 
-.border {
-    border: solid 2px;
-    margin: 10px 0px 10px 0px;
-    padding: 5px;
-    height: 150px;
-    max-height: 225px;
-}
+*/
 
-.on-click {
-  border: dotted 10px;
-  margin: 10px 0px 10px 0px;
-  padding: 5px;
-  height: 150px;
-  max-height: 225px;
-  background-color: lightblue;
-  word-wrap: break-word;*/
+
+
+
+
+
+
+
+
+
+
+
+	

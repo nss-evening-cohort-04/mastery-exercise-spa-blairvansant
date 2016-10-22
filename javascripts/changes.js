@@ -1,35 +1,43 @@
 var CarLot = (function(firstIife) {
 	var currentPick = "";
-	var activeContainer = document.getElementsByClassName("col-md-4 car_card border");
+	var activeContainer = document.getElementsByClassName("car_card");
 	var userInput = document.getElementById("enterText");
 
 		firstIife.activateEvents = function() {
-			for (var i = 0; i < activeContainer.length; i++) {
-				activeContainer[i].addEventListener("click", function(a) {
-				console.log(a);
+			for (var a = 0; a < activeContainer.length; a++) {
+				activeContainer[a].addEventListener("click", function(b) {
+			for (var c = 0; c < activeContainer.length; c++) {
+				activeContainer[c].classList.remove("on-click");
+				userInput.value = "";
+			}
 
-				
-
-			a.currentTarget.classList.add.remove("on-click");
-			currentPick = a.target;
+			b.currentTarget.classList.add("on-click");
+			currentPick = b.currentTarget;
 			userInput.focus();
-	    console.log(currentPick);
 
 			});
 
 	
 }	
 
+	userInput.addEventListener("keyup", clearInput);
+
+	function clearInput(b) {
+		b.preventDefault();
+		if (b.keyCode === 13)
+		userInput.value = "";
+	}
 
 
 
+//unnecessary clear btn 
 // function clear(){
  
 //  	document.getElementById("enterText").value = "";
 //  	console.log(clearButton, clicked);
 //  }
 }
-
+	return firstIife;
 
 })(CarLot || {});
 

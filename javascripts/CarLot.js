@@ -6,6 +6,7 @@ var CarLot = (function () {
       var carInventory = ["inventory.json"];	
       var inventoryLoader = new XMLHttpRequest(); 
 
+// When your page first loads, you need to use an XHR to load the contents of the JSON file, and parse them into a native JavaScript object.
       inventoryLoader.addEventListener("load", function () {
       var inventory = JSON.parse(this.responseText);
 
