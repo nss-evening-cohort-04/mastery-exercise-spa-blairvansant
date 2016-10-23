@@ -1,26 +1,16 @@
 function fillPage (inventory) {
-  // Loop over the inventory and populate the page
-  var container = document.getElementById("container");
+  var container = document.getElementById("fullContainer");
   var counter = 0;
   var carOutput = "";
   var currentCar = "";
 
   	for (var i = 0; i < inventory.cars.length; i++) {
   	var car = inventory.cars[i];
-     carOutput += "<div class ='container'>";
-
-  		carOutput += "<div class='row'>";
-        carOutput += "<div class='col-sm-4 car_card border'></div>";
-        carOutput += "</div>";
-        carOutput += "<div>" + car.year + " " + car.make + " " + car.model + "</div>";
-        carOutput += "<div id='description' class='description'>" + car.description + "</div>";
-        carOutput += "<div>" + car.price + "</div>";
-        carOutput += "</div>";
-
-
-
-
-
+        carOutput += "<div class='col-sm-4 car_card border'>"
+          carOutput += "<div>" + car.year + " " + car.make + " " + car.model + "</div>";
+          carOutput += "<div class='description'>" + car.description + "</div>";
+          carOutput += "<div>" + car.price + "</div>";
+        carOutput +="</div>";
   	}
   		
       container.innerHTML = carOutput;

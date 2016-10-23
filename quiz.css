@@ -14,7 +14,7 @@
 	font-variant: normal;
 	font-weight: 1000;
 	line-height: 26.4px;
-	color: lightyellow;
+	color: dimgrey;
 }
 
 .border {
@@ -25,15 +25,18 @@
 	max-height: 225px;
 }
 
-.on-click {
-	border: double 12px;
-	padding: 5px;
-  margin: 10px 0;
+#on-click {
+	border: double  12px;
+	padding: 10px;
+  margin: 15px 0;
 	height: 150px;
 	max-height: 200px;
-	background-color: yellow;	
+	background-color: lightyellow;	
 }
 
+#fullContainer {
+	margin-top: 50px;
+}
 /*.container {
 	max-width: 300px
 }

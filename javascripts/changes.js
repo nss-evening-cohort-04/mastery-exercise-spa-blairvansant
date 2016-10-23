@@ -1,41 +1,36 @@
 var CarLot = (function(firstIife) {
-	var currentPick = "";
+	var $currentPick;
 	var activeContainer = document.getElementsByClassName("car_card");
-	var userInput = document.getElementById("enterText");
-
+	var $userInput = $("#enterText")[0];
 		firstIife.activateEvents = function() {
 			for (var a = 0; a < activeContainer.length; a++) {
-				activeContainer[a].addEventListener("click", function(b) {
-			for (var c = 0; c < activeContainer.length; c++) {
-				activeContainer[c].classList.remove("on-click");
-				userInput.value = "";
+				activeContainer[a].addEventListener("click", function(e) {
+			for (var b = 0; b < activeContainer.length; c++) {
+				activeContainer[b].classList.remove("on-click");
+				$userInput.value = "";
 			}
+			console.log(e.currentTarget);
+			$currentPick = $(e.currentTarget).children(".description");
+			console.log($currentPick);
+			$userInput.value = $currentPick.html();
 
-			b.currentTarget.classList.add("on-click");
-			currentPick = b.currentTarget;
-			userInput.focus();
+			e.currentTarget.classList.add("on-click");
+			$userInput.focus();
 
 			});
+		}	
+			$userInput.addEventListener("keyup", clearInput);
 
-	
-}	
+			function clearInput(e) {
+				e.preventDefault();
+				if (e.keyCode === 13){
+				$userInput.value = "";
 
-	userInput.addEventListener("keyup", clearInput);
-
-	function clearInput(b) {
-		b.preventDefault();
-		if (b.keyCode === 13)
-		userInput.value = "";
+				}else { 
+				console.log($currentPick);
+				$currentPick.html($userInput.value);
+	  }
 	}
-
-
-
-//unnecessary clear btn 
-// function clear(){
- 
-//  	document.getElementById("enterText").value = "";
-//  	console.log(clearButton, clicked);
-//  }
 }
 	return firstIife;
 
