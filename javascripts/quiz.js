@@ -6,7 +6,7 @@ function fillPage (inventory) {
 
   	for (var i = 0; i < inventory.cars.length; i++) {
   	var car = inventory.cars[i];
-        carOutput += "<div class='col-sm-4 car_card border'>"
+        carOutput += "<div class='col-sm-4 car_card border' style='border-color: ${car.color};border-style: solid;'>"
           carOutput += "<div>" + car.year + " " + car.make + " " + car.model + "</div>";
           carOutput += "<div class='description'>" + car.description + "</div>";
           carOutput += "<div>" + car.price + "</div>";

@@ -15,8 +15,9 @@ var CarLot = (function(firstIife) {
 			e.currentTarget.classList.add("on-click");
 			$userInput.focus();
 			});
+
 		}	
-			$userInput.addEventListener("keyup", clearInput);
+			 $userInput.addEventListener("keyup", clearInput);
 
 			function clearInput(e) {
 				e.preventDefault();
