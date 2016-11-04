@@ -1,0 +1,57 @@
+
+#enterText {
+	width: 850px;
+}
+
+#navbar {
+	background-color: lightblue;
+}
+
+#brand {
+	font-family: "Contrail One";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 1000;
+	line-height: 26.4px;
+	color: dimgrey;
+}
+
+/*.border {
+	border: solid 4px;
+	margin: 10px 0;
+	padding: 5px;
+	height: 150px;
+	max-height: 225px;
+}*/
+
+.on-click {
+	border: double  12px;
+	padding: 10px;
+  margin: 15px 0;
+	height: 150px;
+	max-height: 200px;
+	background-color: lightyellow;	
+}
+
+#fullContainer {
+	margin-top: 50px;
+}
+/*.container {
+	max-width: 300px
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+	
